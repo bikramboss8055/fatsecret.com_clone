@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FatSecret India - Calorie Counter and Diet Tracker for Weight Loss</title>
+
+    <STYLE>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+
+            margin: 0;
+        }
+
+        #wall {
+            height: 715px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+
+        #navbar {
+            display: flex;
+            width: 1000px;
+            height: 25px;
+            text-align: left;
+            margin: auto;
+
+        }
+
+        #navbar>div {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        #topic {
+            width: 40%;
+            justify-content: space-between;
+
+            margin-right: 40%;
+            font-size: 13PX;
+
+        }
+
+        #country {
+            width: 20%;
+
+        }
+
+        #country>img {
+            width: 25px;
+            height: 25px;
+            margin: -5px 0 5px 10px;
+        }
+
+        #country>p {
+            font-size: 13px;
+
+
+        }
+
+        #topline {
+            font-size: 43px;
+            font-weight: 400;
+            height: 73px;
+        }
+
+        #topline+img {
+            padding-bottom: 20px;
+        }
+
+        #login {
+            width: 1000px;
+            height: 650px;
+            margin: 25px auto 0;
+            padding-top: 50px;
+
+
+            display: block;
+
+        }
+
+
+        #fb {
+
+            width: 378px;
+            height: 40px;
+            margin: 25px 0;
+            background-color: #3367D6;
+            display: flex;
+            border-radius: 2px;
+        }
+
+        #fb:hover {
+            cursor: pointer;
+        }
+
+        #fb>img {
+
+            background-color: aliceblue;
+            margin: 5px;
+
+        }
+
+        #gg {
+            width: 378px;
+            height: 40px;
+            margin-top: 20px;
+            background-color: #4285F4;
+            display: flex;
+            border-radius: 2px;
+        }
+
+        #gg>img {
+            border: .5px solid #4285F4;
+            padding: 5px;
+            background-color: aliceblue;
+
+        }
+
+        .log>p {
+            margin: auto;
+            color: aliceblue;
+
+        }
+
+        .log>input {
+            width: 183px;
+            height: 43px;
+            box-sizing: border-box;
+            margin-right: 10px;
+        }
+
+        #submit {
+            background-color: #219B34;
+            border: 1px solid #336F3F;
+
+        }
+
+        #para {
+            line-height: 35px;
+            color: aliceblue;
+
+        }
+
+        #ins {
+            width: 100%;
+            text-align: center;
+            margin-top: 55px;
+        }
+
+        h3 {
+            text-shadow: 2px 2px black;
+            font-weight: 200;
+        }
+
+        .text {
+            text-shadow: 1px 1px black;
+            line-height: 40px;
+
+        }
+
+        #btm {
+            display: flex;
+            margin-top: -95px;
+
+        }
+
+        #center {
+            text-align: center;
+        }
+
+        .empty {
+            width: 48.5%;
+            height: 35px;
+            margin: 25px 0;
+            background-color: #32B34C;
+        }
+
+        #grntab {
+            height: 227px;
+            width: 100%;
+            background-color: #32B34C;
+            display: flex;
+
+        }
+
+        #grntab>div {
+
+            width: 1000px;
+            margin: auto;
+            align-self: center;
+            margin-bottom: 100px;
+
+        }
+
+        #grntab p {
+            padding-top: 14px;
+            font-size: 21px;
+            line-height: 35px;
+
+
+        }
+
+        #grntab h2 {
+            font-size: 43px;
+            font-weight: normal;
+        }
+
+        #btm2 {
+            display: flex;
+            margin-top: -60px;
+
+        }
+
+        #center2 {
+            text-align: center;
+            background-color: #EDF1E9;
+
+        }
+
+        .empty2 {
+            width: 48.5%;
+            height: 50px;
+            margin: 25px 0 0 0;
+            background-color: #EDF1E9;
+        }
+
+        /* ------------ */
+        #whttab {
+
+            height: 200px;
+            width: 100%;
+            background-color: #EDF1E9;
+
+        }
+
+        #whttab>div {
+            width: 1000px;
+            display: flex;
+            margin: auto;
+
+        }
+
+        #whttab>div>div+div {
+            margin-left: 95px;
+
+
+        }
+
+        #whttab h2 {
+            font-size: 43px;
+            font-weight: normal;
+            padding-bottom: 14px;
+            color: #32B34C;
+
+
+        }
+
+        li {
+            line-height: 25px;
+            color: black;
+
+        }
+
+        #whttab>div+div {
+            /* margin-left:-170px; */
+        }
+
+        #whttab p {
+            color: black;
+            line-height: 25px;
+        }
+
+        #btm3 {
+            display: flex;
+            margin-top: 0px;
+
+        }
+
+        #center3 {
+            text-align: center;
+        }
+
+        .empty3 {
+            width: 48.5%;
+            height: 35px;
+            margin: 25px 0;
+            background-color: #32B34C;
+        }
+
+        /* ---------------- */
+        #grntab2 {
+            background-color: #32B34C;
+            margin-top: -25px;
+            border: 1px solid;
+        }
+
+        #grntab2>div {
+            width: 1000px;
+            margin: auto;
+            border: 1px solid;
+            
+
+        }
+
+        #tasks {
+            display:flex;
+            height: auto;
+            width: 200vw;
+            gap: 250px;
+            
+        }
+        
+    </STYLE>
+</head>
+
+<body>
+    <div id="wall" style="background-image:url('https://a.ftscrt.com/static/images/splash/Sunrise_BG_01.jpg'); ">
+
+        <!-- navbar -->
+        <div id="navbar">
+            <div id="topic">
+                <p>FOODS</p>
+                <p>RECIPES</p>
+                <p>FITNESS</p>
+                <p>COMMUNITY</p>
+
+            </div>
+            <div id="country">
+                <p>INDIA</p>
+                <IMG src="https://a.ftscrt.com/static/images/markets/largeFlags/IN.png"></IMG>
+            </div>
+
+        </div>
+        <div id="login">
+            <div>
+                <h1 id="topline">Your Key to Success</h1>
+                <img src="https://a.ftscrt.com/static/images/splash/FS_Logo_SplashScreen.png" alt="">
+            </div>
+            <div class="log" id="fb">
+                <img src="\scientific-ship-5992\facebook.png
+                " alt="">
+                <p>Continue with Facebook</p>
+            </div>
+            <div class="log" id="gg">
+                <img src="\scientific-ship-5992\google (1).png" alt="">
+                <p>Continue with Google</p>
+            </div>
+            <div class="log">
+                <p class="text">Create account using email</p>
+                <input type="email" placeholder="Email Address">
+                <input type="submit" value="Start Now" id="submit">
+                <p class="text">Already a Member?&nbsp<a href="">Sign In</a></p>
+            </div>
+            <div id="para">
+                <h3>Start losing weight the healthy way with easy to use apps, online tools and support.</h3>
+            </div>
+            <div id="ins">
+                <img src="https://a.ftscrt.com/static/images/mobi/ios/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
+                    alt="">
+                <img src="https://a.ftscrt.com/static/images/mobi/android/en_get_2.svg" alt="">
+            </div>
+
+        </div>
+        <div id="btm">
+            <div class="empty"> </div>
+            <div id="center"> <img src="https://a.ftscrt.com/static/images/splash/Logo_Tab_Reverse_Green.png" alt="">
+            </div>
+            <div class="empty"></div>
+        </div>
+
+    </div>
+    <div id="grntab">
+        <div>
+            <h2>Superb 100% FREE calorie counter apps</h2>
+            <p>Over 35 million people have lost weight with FatSecret. Start your weight loss journey today and access
+                the world's highest quality food and nutrition database.</p>
+        </div>
+
+    </div>
+    <div id="btm2">
+        <div class="empty2"> </div>
+        <div id="center2"> <img src="\scientific-ship-5992\Logo_Tab_Green.png" alt=""></div>
+        <div class="empty2"></div>
+    </div>
+    <div id="whttab">
+        <div>
+            <div>
+                <h2>Why FatSecret?</h2>
+                <ul>
+                    <li>100% free, nothing to pay</li>
+                    <li>Fastest, easiest to use calorie counter apps</li>
+                    <li>Supportive community</li>
+                    <li>Proven success</li>
+                </ul>
+            </div>
+            <div>
+                <h2>How FatSecret Works!</h2>
+                <p>People who track food achieve more than double the average weight loss and<br> members lose weight 3x
+                    faster when doing it with friends. FatSecret combines<br> these to create the most powerful solution
+                    for healthy, sustainable weight loss.</p>
+            </div>
+        </div>
+
+
+    </div>
+    <div id="btm3">
+        <div class="empty3"> </div>
+        <div id="center3"> <img src="https://a.ftscrt.com/static/images/splash/Logo_Tab_Reverse_Green.png" alt=""></div>
+        <div class="empty3"></div>
+    </div>
+    <div id="grntab2">
+        <div>
+            <h2>All the tools to achieve your diet goals</h2>
+            <div id="tasks">
+                <div style="border:1px solid ;">
+                    <img style="display:inline-block;" src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
+                    <p style="display:block ;">A food diary to keep track of what you're eating</p>
+
+
+                    <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
+                    <p>A food diary to keep track of what you're eating</p>
+
+
+                    <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
+                    <p>A food diary to keep track of what you're eating</p>
+                </div>
+                <div style="border:1px solid ;">
+                    <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
+                    <p>A food diary to keep track of what you're eating</p>
+
+                    <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
+                    <p>A food diary to keep track of what you're eating</p>
+
+                    <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
+                    <p>A food diary to keep track of what you're eating</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
