@@ -2,320 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <title>FatSecret India - Calorie Counter and Diet Tracker for Weight Loss</title>
-
-    <STYLE>
-        * {
-            font-family: Arial, Helvetica, sans-serif;
-            color: aliceblue;
-
-            margin: 0;
-        }
-
-        #wall {
-            height: 715px;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-
-        #navbar {
-            display: flex;
-            width: 1000px;
-            height: 25px;
-            text-align: left;
-            margin: auto;
-
-        }
-
-        #navbar>div {
-            display: flex;
-            margin-top: 20px;
-        }
-
-        #topic {
-            width: 40%;
-            justify-content: space-between;
-
-            margin-right: 40%;
-            font-size: 13PX;
-
-        }
-
-        #country {
-            width: 20%;
-
-        }
-
-        #country>img {
-            width: 25px;
-            height: 25px;
-            margin: -5px 0 5px 10px;
-        }
-
-        #country>p {
-            font-size: 13px;
-
-
-        }
-
-        #topline {
-            font-size: 43px;
-            font-weight: 400;
-            height: 73px;
-        }
-
-        #topline+img {
-            padding-bottom: 20px;
-        }
-
-        #login {
-            width: 1000px;
-            height: 650px;
-            margin: 25px auto 0;
-            padding-top: 50px;
-
-
-            display: block;
-
-        }
-
-
-        #fb {
-
-            width: 378px;
-            height: 40px;
-            margin: 25px 0;
-            background-color: #3367D6;
-            display: flex;
-            border-radius: 2px;
-        }
-
-        #fb:hover {
-            cursor: pointer;
-        }
-
-        #fb>img {
-
-            background-color: aliceblue;
-            margin: 5px;
-
-        }
-
-        #gg {
-            width: 378px;
-            height: 40px;
-            margin-top: 20px;
-            background-color: #4285F4;
-            display: flex;
-            border-radius: 2px;
-        }
-
-        #gg>img {
-            border: .5px solid #4285F4;
-            padding: 5px;
-            background-color: aliceblue;
-
-        }
-
-        .log>p {
-            margin: auto;
-            color: aliceblue;
-
-        }
-
-        .log>input {
-            width: 183px;
-            height: 43px;
-            box-sizing: border-box;
-            margin-right: 10px;
-        }
-
-        #submit {
-            background-color: #219B34;
-            border: 1px solid #336F3F;
-
-        }
-
-        #para {
-            line-height: 35px;
-            color: aliceblue;
-
-        }
-
-        #ins {
-            width: 100%;
-            text-align: center;
-            margin-top: 55px;
-        }
-
-        h3 {
-            text-shadow: 2px 2px black;
-            font-weight: 200;
-        }
-
-        .text {
-            text-shadow: 1px 1px black;
-            line-height: 40px;
-
-        }
-
-        #btm {
-            display: flex;
-            margin-top: -95px;
-
-        }
-
-        #center {
-            text-align: center;
-        }
-
-        .empty {
-            width: 48.5%;
-            height: 35px;
-            margin: 25px 0;
-            background-color: #32B34C;
-        }
-
-        #grntab {
-            height: 227px;
-            width: 100%;
-            background-color: #32B34C;
-            display: flex;
-
-        }
-
-        #grntab>div {
-
-            width: 1000px;
-            margin: auto;
-            align-self: center;
-            margin-bottom: 100px;
-
-        }
-
-        #grntab p {
-            padding-top: 14px;
-            font-size: 21px;
-            line-height: 35px;
-
-
-        }
-
-        #grntab h2 {
-            font-size: 43px;
-            font-weight: normal;
-        }
-
-        #btm2 {
-            display: flex;
-            margin-top: -60px;
-
-        }
-
-        #center2 {
-            text-align: center;
-            background-color: #EDF1E9;
-
-        }
-
-        .empty2 {
-            width: 48.5%;
-            height: 50px;
-            margin: 25px 0 0 0;
-            background-color: #EDF1E9;
-        }
-
-        /* ------------ */
-        #whttab {
-
-            height: 200px;
-            width: 100%;
-            background-color: #EDF1E9;
-
-        }
-
-        #whttab>div {
-            width: 1000px;
-            display: flex;
-            margin: auto;
-
-        }
-
-        #whttab>div>div+div {
-            margin-left: 95px;
-
-
-        }
-
-        #whttab h2 {
-            font-size: 43px;
-            font-weight: normal;
-            padding-bottom: 14px;
-            color: #32B34C;
-
-
-        }
-
-        li {
-            line-height: 25px;
-            color: black;
-
-        }
-
-        #whttab>div+div {
-            /* margin-left:-170px; */
-        }
-
-        #whttab p {
-            color: black;
-            line-height: 25px;
-        }
-
-        #btm3 {
-            display: flex;
-            margin-top: 0px;
-
-        }
-
-        #center3 {
-            text-align: center;
-        }
-
-        .empty3 {
-            width: 48.5%;
-            height: 35px;
-            margin: 25px 0;
-            background-color: #32B34C;
-        }
-
-        /* ---------------- */
-        #grntab2 {
-            background-color: #32B34C;
-            margin-top: -25px;
-            border: 1px solid;
-        }
-
-        #grntab2>div {
-            width: 1000px;
-            margin: auto;
-            border: 1px solid;
-            
-
-        }
-
-        #tasks {
-            display:flex;
-            height: auto;
-            width: 200vw;
-            gap: 250px;
-            
-        }
-        
-    </STYLE>
+    <link rel="stylesheet" href="./homepage.css"> 
 </head>
 
 <body>
@@ -400,8 +89,8 @@
             </div>
             <div>
                 <h2>How FatSecret Works!</h2>
-                <p>People who track food achieve more than double the average weight loss and<br> members lose weight 3x
-                    faster when doing it with friends. FatSecret combines<br> these to create the most powerful solution
+                <p>People who track food achieve more than double the average weight loss and members lose weight 3x
+                    faster when doing it with friends. FatSecret combines these to create the most powerful solution
                     for healthy, sustainable weight loss.</p>
             </div>
         </div>
@@ -417,32 +106,168 @@
         <div>
             <h2>All the tools to achieve your diet goals</h2>
             <div id="tasks">
-                <div style="border:1px solid ;">
-                    <img style="display:inline-block;" src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
-                    <p style="display:block ;">A food diary to keep track of what you're eating</p>
-
-
-                    <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
-                    <p>A food diary to keep track of what you're eating</p>
-
-
-                    <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
-                    <p>A food diary to keep track of what you're eating</p>
+                <div>
+                    <div>
+                        <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
+                        <p>A food diary to keep track of what you're eating</p>
+                    </div>
+                    <div>
+                        <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
+                        <p>A large collection of healthy recipes for your diet</p>
+                    </div>
+                    <div>
+                        <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
+                        <p>Nutrition info for all foods, brands and restaurants</p>
+                    </div>
                 </div>
-                <div style="border:1px solid ;">
-                    <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
-                    <p>A food diary to keep track of what you're eating</p>
+                <div>
+                    <div>
+                        <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
+                        <p>An exercise diary to record all the calories you burn</p>
+                    </div>
+                    <div>
+                        <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
+                        <p> A weight chart and journal to record your progress</p>
+                    </div>
+                    <div>
+                        <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
+                        <p>Mobile apps for iPhone, iPad and Android</p>
+                    </div>
+                </div>
 
-                    <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
-                    <p>A food diary to keep track of what you're eating</p>
 
-                    <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
-                    <p>A food diary to keep track of what you're eating</p>
+            </div>
+        </div>
+    </div>
+    <div id="btm4">
+        <div class="empty4"> </div>
+        <div id="center4"> <img src="https://a.ftscrt.com/static/images/splash/Logo_Tab_Green.png" alt=""></div>
+        <div class="empty4"></div>
+    </div>
+    <div id="bluetab">
+        <div>
+            <h2>Get Connected with FatSecret</h2>
+            <div id="main">
+                <div id="child1">
+                    <div>
+                        <p>The perfect application for keeping track of your food, exercise and weight while on-the-go
+                        </p>
+                    </div>
+                    <div>
+                        <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
+                        <p>iPhone, iPod Touch and iPad</p>
+                    </div>
+                    <div>
+                        <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
+                        <p>Android Phones and Tablets</p>
+                    </div>
+                    <div id="inner">
+                        <div>
+                            <img src="https://a.ftscrt.com/static/images/mobi/ios/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
+                                alt="">
+                        </div>
+                        <div>
+                            <img src="https://a.ftscrt.com/static/images/mobi/android/en_get_2.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="child2">
+                    <img src="https://a.ftscrt.com/static/images/splash/img_splash_getconnected_01_1x.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="btm5">
+        <div class="empty5"> </div>
+        <div id="center5"> <img src="https://a.ftscrt.com/static/images/splash/Logo_Tab_Blue.png" alt=""></div>
+        <div class="empty5"></div>
+    </div>
+
+    <div id="main2">
+        <div id="child3">
+            <h2>Sign Up Now!</h2>
+            <div id="inner2">
+                <div>
+                    <p>FatSecret is 100% free</p>
+                </div>
+                <div>
+                    <input type="email" placeholder="Email Address">
+                    <input type="submit" value="Start Now" id="submit2">
+                    <p class="text">Already a Member?&nbsp<a href="">Sign In</a></p>
                 </div>
             </div>
 
         </div>
     </div>
+    <div id="btm6">
+        <div class="empty6"> </div>
+        <div id="center6"> <img src="https://a.ftscrt.com/static/images/splash/Logo_Tab_Black.png" alt=""></div>
+        <div class="empty6"></div>
+    </div>
+    <div id="footer">
+        <div id="logo">
+            <img src="https://a.ftscrt.com/static/images/splash/FS_Logo_SplashScreen_Green.png" alt="">
+        </div>
+        <div>
+            <div id="foottop">
+                <div id="top"> Get the app</div>
+
+
+                <img src="https://a.ftscrt.com/static/images/mobi/ios/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
+                    alt="">
+
+                <img src="https://a.ftscrt.com/static/images/mobi/android/en_get_2.svg" alt="">
+
+
+
+            </div>
+            <div id="footmid">
+                <div id="social">
+                    <img src="https://a.ftscrt.com/static/images/social/but_social_facebook.svg" alt="">
+                    <img src="https://a.ftscrt.com/static/images/social/but_social_instagram.svg" alt="">
+                    <img src="https://a.ftscrt.com/static/images/social/but_social_twitter.svg" alt="">
+                </div>
+                <div id="top2">
+
+                    <p>BRAND LIST</p>
+                    <p>CONTACT US</p>
+
+
+                </div>
+                <div id="bottom">
+
+
+                    <p>FIND PEOPLE</p>
+                    <span class="sep">|</span>
+
+                    <p>TERMS AND CONDITIONS</p>
+                    <span class="sep">|</span>
+
+                    <p>PRIVACY POLICY</p>
+
+                    <span class="sep">|</span>
+                    <p>REPORT ABUSE</p>
+
+                </div>
+            </div>
+            <div id="footbottom">
+                <div >
+                    <div>
+                        <sub>© 2022 FatSecret. All rights reserved.</sub>
+                    </div>
+                    
+                    <div id="innerbtm">
+                        <sub>INDIA</sub>
+                        <img src="https://a.ftscrt.com/static/images/markets/smallFlags/IN.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+ 
 </body>
 
 </html>
