@@ -1,0 +1,137 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    
+}
+a{
+    text-decoration: none;
+}
+
+.container {
+    height: 975px;
+    width: 986px;
+    border: 1px dotted;
+    margin: 75px auto 0;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+
+}
+
+.heading {
+    font-size: 25px;
+    color: #88A8CF;
+}
+
+hr {
+    background-color: #88A8CF;
+    height: 1px;
+    margin-bottom: 60px;
+    border: none;
+}
+
+.form {
+    width: 660px;
+    margin: auto;
+}
+
+.sub {
+    display: flex;
+}
+/* ----------------------------top */
+.top{
+    height:250px;
+
+}
+
+.topic{
+    width: 150px;
+    height: 30px;
+    font-weight: 700;
+    color: grey;
+}
+.radio{
+    width: 150px;
+    margin-right: 5px;
+
+}
+.selectbox{
+    width: 150px;
+    margin-right: 10px;
+}
+.input>input{
+    width:142px;
+    margin-right: 10px;
+}
+.img{
+    position:relative;
+    left:2px;
+    top: 10px;
+}
+
+
+
+/* ------------------------------mid */
+.mid{
+    height: 100px;
+}
+.largebox{
+    width:370px ;
+    height: 18px;
+    display: block;
+    
+}
+.large{
+    width: 375px;
+}
+   
+/* --------------------------------bottom */
+.bottom{
+    height: 150px;
+
+}
+.bottom>div{
+    margin-bottom: 20px;
+}
+#name{
+    width:150px;
+    font-weight: 700;
+    color: grey;
+}
+#name+div{
+    width: 497px;
+}
+/* ----------------------------------below section*/
+.term{
+    text-align: center;
+    margin-top: 50px;
+}
+.btncon{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.btn{
+    height:28px ;
+    width:150px ;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid grey;
+}
+.btn:first-child{
+    color:#028CC4
+}
+#last{
+    background-color:#219B34 ;
+    color: aliceblue;
+}
+.lastdiv{
+    width: 986px;
+    margin:0 auto 75px;
+    text-align: end;
+}
