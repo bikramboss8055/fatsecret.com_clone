@@ -1,0 +1,139 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    height:auto;
+    width: 986px;
+    border: 1px dotted;
+    margin: 75px auto 0;
+    padding-top: 20px;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+
+}
+
+.heading {
+    font-size: 25px;
+    color: #88A8CF;
+}
+
+hr {
+    background-color: #88A8CF;
+    height: 1px;
+    margin-top: -10px;
+    margin-bottom: 60px;
+    border: none;
+}
+
+/* -------------------------top */
+.top {
+    width: 660px;
+    height: auto;
+    margin: auto;
+    padding: 0 32px;
+}
+
+.cal>input {
+    font-size: 20px;
+    height: 24px;
+    width: 100px;
+    margin-right: 5px;
+}
+
+.img {
+    position: relative;
+    top: 20px;
+    left: 5px;
+}
+
+.span {
+
+    margin-right: 30px;
+
+}
+
+#mainspan {
+    margin-top: -30px;
+
+}
+.img{
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+
+/* ------------------------------mid */
+.mid {
+    width: 660px;
+    height:auto ;
+    margin: 50px auto 0;
+    border: 2px solid #88A8CF;
+    padding: 0 32px;
+}
+
+.mainin {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner {
+    height: 125px;
+    width: 610px;
+    padding: 25px;
+    background-color: #EEF1EA;
+    margin: 5px 0 32px;
+    text-align: center;
+}
+#dropbox{
+    height: 31px;
+    width: 605;
+    text-align: center;
+    border: 2px dashed rgb(140, 204, 149) ;
+    padding: 10px 0;
+}
+#dropbox b{
+    display: block;
+    margin: 9px 0;
+}
+.inner>button{
+    width: 292px;
+    color:#028CC4 ;
+    font-weight: 700;
+    border: 1px solid rgb(207, 205, 202);
+}
+.inner>button:hover{
+    background-color:rgb(221, 216, 216);
+    border: 1px solid grey;
+    cursor: pointer;
+}
+.strbtn{
+    width: 660px;
+    padding: 0 25px;
+    margin: 60px auto ;
+    text-align: end;
+
+}
+.strbtn>button{
+    height: 28px;
+    width: 150px;
+    background-color:#219B34 ;
+    border: 1px solid grey;
+}
+.strbtn>button:hover{
+    cursor: pointer;
+}
+.bottom{
+    width: 986px;
+    text-align: end;
+    margin: -10px auto 0;
+}
