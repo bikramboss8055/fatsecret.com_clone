@@ -128,6 +128,7 @@ hr {
     width: 150px;
     background-color:#219B34 ;
     border: 1px solid grey;
+    color: white;
 }
 .strbtn>button:hover{
     cursor: pointer;

@@ -114,6 +114,9 @@ body{
     background-color: aliceblue;
 
 }
+#email{
+    color: #111111;
+}
 
 .log>p {
     margin: auto;
@@ -128,7 +131,7 @@ body{
     margin-right: 10px;
 }
 
-#submit {
+.submit {
     background-color: #219B34;
     border: 1px solid #336F3F;
 

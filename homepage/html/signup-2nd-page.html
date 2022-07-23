@@ -3,8 +3,9 @@
 
 <head>
 
-    <title>Document</title>
-    <link rel="stylesheet" href="signup-2nd-page.css">
+    <title>FatSecret India - Calorie Counter and Diet Tracker for Weight Loss</title>
+    <link rel="shortcut icon" type="image" href="https://www.fatsecret.co.in/favicon.png">
+    <link rel="stylesheet" href="\scientific-ship-5992\homepage\styles\signup-2nd-page.css">
     
 </head>
 
@@ -38,21 +39,21 @@
             <div id="mainspan">
                 <span>
                     <span class="span">
-                        <input type="radio">
+                        <input name="privacy" type="radio">
                         <label for="">With everyone
                             <img class="img" src="https://a.ftscrt.com/static/images/registration/share_everyone.png"
                                 alt="">
                         </label>
                     </span>
                     <span class="span">
-                        <input type="radio">
+                        <input name="privacy" type="radio">
                         <label for="">With my followers
                             <img class="img" src="https://a.ftscrt.com/static/images/registration/share_buddies.png"
                                 alt="">
                         </label>
                     </span>
                     <span class="span">
-                        <input type="radio">
+                        <input name="privacy" type="radio">
                         <label for="">Keep private
                             <img class="img" src="https://a.ftscrt.com/static/images/registration/share_private.png"
                                 alt="">
@@ -89,12 +90,21 @@
             <div class="inner">
                 <div id="dropbox"><b>Drag and drop here</b></div>
                 <p>or</p>
-                <button>Click to upload image</button>
+                <input type="file">
             </div>
         </div>
-        <div class="strbtn"><button>Start</button></div>
+        <div  class="strbtn"><button id="start">Start</button></div>
     </div>
     <div class="bottom"><p>©2022 FatSecret. All rights reserved.</p></div>
 </body>
+<script>
+    let btn=document.getElementById('start')
+
+    btn.addEventListener('click',function(){
+        location.href='myfatsecretfeed.html'
+    })
+
+
+</script>
 
 </html>

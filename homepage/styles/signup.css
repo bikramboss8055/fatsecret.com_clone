@@ -52,6 +52,10 @@ hr {
     height: 30px;
     font-weight: 700;
     color: grey;
+    
+}
+#topic{
+    margin-right: 25px;
 }
 .radio{
     width: 150px;
@@ -127,6 +131,7 @@ hr {
     color:#028CC4
 }
 #last{
+    padding: 5px 65px;
     background-color:#219B34 ;
     color: aliceblue;
 }
