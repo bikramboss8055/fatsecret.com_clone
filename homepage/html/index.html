@@ -4,7 +4,8 @@
 <head>
    
     <title>FatSecret India - Calorie Counter and Diet Tracker for Weight Loss</title>
-    <link rel="stylesheet" href="./homepage.css"> 
+    <link rel="shortcut icon" type="image" href="https://www.fatsecret.co.in/favicon.png">
+    <link rel="stylesheet" href="\scientific-ship-5992\homepage\styles\homepage.css">
 </head>
 
 <body>
@@ -31,18 +32,18 @@
                 <img src="https://a.ftscrt.com/static/images/splash/FS_Logo_SplashScreen.png" alt="">
             </div>
             <div class="log" id="fb">
-                <img src="\scientific-ship-5992\homepage\facebook.png
+                <img src="/scientific-ship-5992\homepage\icons\facebook.png
                 " alt="">
                 <p>Continue with Facebook</p>
             </div>
             <div class="log" id="gg">
-                <img src="\scientific-ship-5992\homepage\google .png" alt="">
+                <img src="\scientific-ship-5992\homepage\icons\google .png" alt="">
                 <p>Continue with Google</p>
             </div>
             <div class="log">
                 <p class="text">Create account using email</p>
-                <input type="email" placeholder="Email Address">
-                <input type="submit" value="Start Now" id="submit">
+                <input id="email" type="email" placeholder="Email Address">
+                <input type="submit" value="Start Now" class="submit" >
                 <p class="text">Already a Member?&nbsp<a href="">Sign In</a></p>
             </div>
             <div id="para">
@@ -193,8 +194,8 @@
                     <p>FatSecret is 100% free</p>
                 </div>
                 <div>
-                    <input type="email" placeholder="Email Address">
-                    <input type="submit" value="Start Now" id="submit2">
+                    <input id="email" type="email" placeholder="Email Address">
+                    <input type="submit" value="Start Now" class="submit" id="submit2">
                     <p class="text">Already a Member?&nbsp<a href="">Sign In</a></p>
                 </div>
             </div>
@@ -269,5 +270,30 @@
     </div>
  
 </body>
+<script>
+
+    let submit=document.querySelector('.submit')
+    let email=document.getElementById('email')
+    let arr=JSON.parse(localStorage.getItem('emaildata')) || [];
+
+    submit.addEventListener('click',function(){
+        
+        if(!email.value){
+            alert('please enter an email id')
+        }else{
+            let obj={
+                email:email.value,
+            }
+            arr.push(obj)
+            localStorage.clear('emaildata')
+            console.log()
+            localStorage.setItem('emaildata',JSON.stringify(arr))
+
+            location.href='signup.html'
+        }
+
+    })
+
+</script>
 
 </html>
